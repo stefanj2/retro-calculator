@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +19,71 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchbg" translatesAutoresizingMaskIntoConstraints="NO" id="mgL-6H-zOy">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchground" translatesAutoresizingMaskIntoConstraints="NO" id="bl7-U4-GiZ">
+                                <rect key="frame" x="0.0" y="553" width="600" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="GBf-xC-GjM"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot" translatesAutoresizingMaskIntoConstraints="NO" id="6K5-k6-IEQ">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="DhM-FD-7vh"/>
+                                    <constraint firstAttribute="width" constant="240" id="x42-xI-toZ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Retro-Calc" translatesAutoresizingMaskIntoConstraints="NO" id="w4I-Rs-K3N">
+                                <rect key="frame" x="106" y="28" width="388" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="w4I-Rs-K3N" secondAttribute="height" multiplier="97:32" id="Sbl-Kb-fA4"/>
+                                    <constraint firstAttribute="width" constant="388" id="djX-Bx-3GP"/>
+                                    <constraint firstAttribute="height" constant="128" id="wU2-uF-tSu"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Sbl-Kb-fA4"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="mgL-6H-zOy" secondAttribute="bottom" id="3yH-Ha-ja1"/>
+                            <constraint firstItem="6K5-k6-IEQ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="7Qp-tu-Vnr"/>
+                            <constraint firstItem="w4I-Rs-K3N" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8dQ-Y4-E0N"/>
+                            <constraint firstItem="w4I-Rs-K3N" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="8" id="DSK-8q-xHQ"/>
+                            <constraint firstItem="6K5-k6-IEQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ENY-yE-aPy"/>
+                            <constraint firstAttribute="trailing" secondItem="mgL-6H-zOy" secondAttribute="trailing" id="M89-ei-t7H"/>
+                            <constraint firstItem="w4I-Rs-K3N" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="86" id="MKz-aL-1PN"/>
+                            <constraint firstItem="w4I-Rs-K3N" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="8" id="MQy-Wx-Yec"/>
+                            <constraint firstItem="w4I-Rs-K3N" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="OzL-mW-v4i"/>
+                            <constraint firstItem="w4I-Rs-K3N" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="T7i-Zj-emv"/>
+                            <constraint firstItem="mgL-6H-zOy" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="XrF-6p-DS2"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="bl7-U4-GiZ" secondAttribute="bottom" id="aqy-nD-NwQ"/>
+                            <constraint firstAttribute="trailing" secondItem="bl7-U4-GiZ" secondAttribute="trailing" id="dff-yz-M2I"/>
+                            <constraint firstItem="bl7-U4-GiZ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="eso-TR-1dx"/>
+                            <constraint firstItem="mgL-6H-zOy" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="hkx-qz-Pe3"/>
+                            <constraint firstItem="w4I-Rs-K3N" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" multiplier="2" id="hpx-9y-ZNo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="w4I-Rs-K3N" secondAttribute="trailing" constant="86" id="pVB-hc-aAP"/>
+                            <constraint firstItem="w4I-Rs-K3N" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="8" id="x4A-RM-G4K"/>
+                            <constraint firstItem="w4I-Rs-K3N" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="y7j-eO-Ih3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8dQ-Y4-E0N"/>
+                                <exclude reference="MKz-aL-1PN"/>
+                                <exclude reference="MQy-Wx-Yec"/>
+                                <exclude reference="OzL-mW-v4i"/>
+                                <exclude reference="hpx-9y-ZNo"/>
+                                <exclude reference="pVB-hc-aAP"/>
+                                <exclude reference="x4A-RM-G4K"/>
+                                <exclude reference="y7j-eO-Ih3"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +91,10 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Retro-Calc" width="755" height="111"/>
+        <image name="launchbg" width="1433" height="957"/>
+        <image name="launchground" width="999" height="225"/>
+        <image name="robot" width="786" height="402"/>
+    </resources>
 </document>
